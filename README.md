@@ -78,10 +78,11 @@ Alternatively, open `index.html` directly in a web browser.
 - Contact form with basic validation.
 - Browser-based booking storage.
 
-## 7. Limitations
 
-This project is a front-end demonstration. It does not include a backend server, online payment processing, or a shared database. Booking information is stored locally in the user's browser.
-
-## 8. Conclusion
+## 7. Conclusion
 
 EventHub demonstrates the use of HTML, CSS, and JavaScript in developing a multi-page interactive website. It provides a simple platform for browsing events and demonstrating basic ticket booking functionality.
+
+## Alternative
+You can view the website by clicking the following link:
+https://event-booking-web-mu.vercel.app
