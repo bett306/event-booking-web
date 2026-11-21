@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve your tickets for upcoming EventHub events.">
+    <title>EventHub | Book Tickets</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Event<span>Hub.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="events.html" class="nav-button">Explore Events</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="booking-section">
+
+            <div class="section-heading">
+                <p>RESERVE YOUR PLACE</p>
+                <h2>Book Your Tickets</h2>
+                <p>Complete the form below to reserve your event tickets.</p>
+            </div>
+
+            <div class="booking-container">
+
+                <!-- Booking Form -->
+                <div class="booking-form-container">
+
+                    <form id="bookingForm">
+
+                        <h3>Personal Information</h3>
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="e.g. 0712345678"
+                                required>
+                        </div>
+
+                        <h3>Booking Information</h3>
+
+                        <div class="form-group">
+                            <label for="selectedEvent">Select Event</label>
+
+                            <select id="selectedEvent" name="event" required>
+                                <option value="">Choose an event</option>
+                                <option value="1">Summer Music Festival</option>
+                                <option value="2">Business Innovation Summit</option>
+                                <option value="3">Technology Workshop</option>
+                                <option value="4">City Sports Challenge</option>
+                                <option value="5">Career Growth Seminar</option>
+                                <option value="6">Community Networking Night</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ticketQuantity">Number of Tickets</label>
+
+                            <input
+                                type="number"
+                                id="ticketQuantity"
+                                name="ticketQuantity"
+                                min="1"
+                                max="10"
+                                value="1"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialRequest">
+                                Additional Information (Optional)
+                            </label>
+
+                            <textarea
+                                id="specialRequest"
+                                name="specialRequest"
+                                rows="4"
+                                placeholder="Any special requests?"></textarea>
+                        </div>
+
+                        <div class="terms-group">
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required>
+
+                            <label for="terms">
+                                I agree to the booking terms and conditions.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn primary-btn">
+                            Confirm Booking
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- Booking Summary -->
+                <aside class="booking-summary">
+
+                    <h3>Booking Summary</h3>
+
+                    <div class="summary-item">
+                        <span>Selected Event</span>
+                        <strong id="summaryEvent">Not selected</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Ticket Price</span>
+                        <strong id="summaryPrice">KES 0</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Number of Tickets</span>
+                        <strong id="summaryQuantity">1</strong>
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-total">
+                        <span>Total Amount</span>
+                        <strong id="summaryTotal">KES 0</strong>
+                    </div>
+
+                    <p class="summary-note">
+                        Your booking details will be displayed after
+                        successful submission.
+                    </p>
+
+                </aside>
+
+            </div>
+
+            <!-- Booking Confirmation -->
+            <div id="bookingConfirmation" class="booking-confirmation" hidden>
+
+                <h2>Booking Successful!</h2>
+
+                <p>
+                    Thank you for booking with EventHub.
+                    Your booking information is displayed below.
+                </p>
+
+                <div id="confirmationDetails"></div>
+
+                <button
+                    type="button"
+                    id="printBooking"
+                    class="btn secondary-btn">
+                    Print Booking
+                </button>
+
+                <a href="events.html" class="btn primary-btn">
+                    Explore More Events
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Event<span>Hub.</span></h2>
+            <p>Discover. Connect. Experience.</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 EventHub. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
